@@ -9,16 +9,16 @@ import SwiftUI
 
 struct DailyPictureScreen: View {
     
-    @StateObject var viewModel: DailyPictureDefaultViewModel = DailyPictureDefaultViewModel()
+    @StateObject var viewModel = DailyPictureDefaultViewModel()
     
     var body: some View {
         
         ScrollView {
             
             Text(viewModel.state.title)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .bold()
                 .font(.title2)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .center)
                 
             Spacer(minLength: 20)
             
@@ -33,6 +33,7 @@ struct DailyPictureScreen: View {
             Spacer(minLength: 20)
             
             Text(viewModel.state.explination)
+                .font(.footnote)
         }
         .padding()
     }

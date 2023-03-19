@@ -43,7 +43,3 @@ struct NetworkCommunication: NetworkCommunicationType {
         return urlRequest
     }
 }
-
-struct NetworkResponse {
-    
-}

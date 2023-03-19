@@ -7,10 +7,6 @@
 
 import Foundation
 
-protocol DailyPictureViewModel {
-    
-}
-
 final class DailyPictureDefaultViewModel: ObservableObject {
     
     @Published var state: DailyPictureState
@@ -35,10 +31,7 @@ private extension DailyPictureDefaultViewModel {
                 let model = try await service.getPictureOfTheDay()
                 DispatchQueue.main.async { [weak self] in
                     
-                    guard let self else {
-                        //TODO: DO something
-                        return
-                    }
+                    guard let self else { return }
                     self.state.title = model.title
                     self.state.explination = model.explanation
                     self.state.imageUrl = URL(string: model.url)

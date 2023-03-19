@@ -12,6 +12,8 @@ final class DailyPictureDefaultViewModel: ObservableObject {
     @Published var state: DailyPictureState
     
     private var service: PlanetaryService.Type
+    
+    var noInternetMessage = "We are not connected to the internet, showing you the last image we have."
 
     init(service: PlanetaryService.Type = PlanetaryDefaultService.self) {
         
@@ -27,7 +29,7 @@ private extension DailyPictureDefaultViewModel {
         
         Task {
             do {
-                let isInternetAvailable = await NetworkCheck.isInternetAvailable()
+                let isInternetAvailable = try await NetworkCheck.isInternetAvailable()
                 
                 if isInternetAvailable {
                     try await getFromAPI()
@@ -58,6 +60,8 @@ private extension DailyPictureDefaultViewModel {
             guard let self else { return }
             self.state.title = UserDefaults.standard.value(forKey: "DailyPicture_Title") as! String
             self.state.explination = UserDefaults.standard.value(forKey: "DailyPicture_Detail") as! String
+            let lastSaved = UserDefaults.standard.value(forKey: "DailyPicture_Date") as! String
+            self.state.showWarning = !DateUtility.lastSavedToday(dateString: lastSaved)
             self.state.imageData = FileHelper.getImage()
             self.state.hideProgress = true
         }
@@ -81,6 +85,7 @@ private extension DailyPictureDefaultViewModel {
         state.imageUrl = model.url
         UserDefaults.standard.set(model.title, forKey: "DailyPicture_Title")
         UserDefaults.standard.set(model.explanation, forKey: "DailyPicture_Detail")
+        UserDefaults.standard.set(model.date, forKey: "DailyPicture_Date")
     }
 }
 

@@ -25,6 +25,7 @@
 		18FFDFA329C72E12003663E8 /* NetworkCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDFA229C72E12003663E8 /* NetworkCheck.swift */; };
 		18FFDFA629C735F8003663E8 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDFA529C735F8003663E8 /* FileManager.swift */; };
 		18FFDFAA29C74988003663E8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDFA929C74988003663E8 /* StringExtensions.swift */; };
+		18FFDFAC29C76712003663E8 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDFAB29C76712003663E8 /* DateUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		18FFDFA229C72E12003663E8 /* NetworkCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheck.swift; sourceTree = "<group>"; };
 		18FFDFA529C735F8003663E8 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		18FFDFA929C74988003663E8 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		18FFDFAB29C76712003663E8 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				18FFDFA529C735F8003663E8 /* FileManager.swift */,
+				18FFDFAB29C76712003663E8 /* DateUtility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				18FFDF9029C71E68003663E8 /* PlanetaryModels.swift in Sources */,
 				18FFDF9729C724D0003663E8 /* DailyPictureScreen.swift in Sources */,
 				18FFDFAA29C74988003663E8 /* StringExtensions.swift in Sources */,
+				18FFDFAC29C76712003663E8 /* DateUtility.swift in Sources */,
 				18FFDF9D29C72675003663E8 /* NetworkRequest.swift in Sources */,
 				18FFDF9329C71EDF003663E8 /* DataExtensions.swift in Sources */,
 				18FFDF9F29C72692003663E8 /* NetworkError.swift in Sources */,

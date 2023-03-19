@@ -12,21 +12,20 @@ struct NetworkCheck {
     
     static let monitor = NWPathMonitor()
 
-    static func isInternetAvailable() async -> Bool {
+    static func isInternetAvailable() async throws -> Bool {
         
         var isAvailable = false
         
         monitor.pathUpdateHandler = { path in
             isAvailable = path.status == .satisfied
-            monitor.cancel()
         }
         
         let queue = DispatchQueue(label: "Monitor")
         monitor.start(queue: queue)
         
-        await Task.sleep(100_000_000)
+        try await Task.sleep(nanoseconds: 100_000_000)
             
-            monitor.cancel()
+        monitor.cancel()
         
         return isAvailable
     }

@@ -11,5 +11,7 @@ struct DailyPictureState {
     
     var title: String = ""
     var explination: String = ""
-    var imageUrl: URL? = nil
+    var imageUrl: String = ""
+    var imageData: Data?
+    var hasNetwork: Bool = true
 }

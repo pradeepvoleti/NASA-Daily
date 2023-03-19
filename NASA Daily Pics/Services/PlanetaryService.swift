@@ -9,6 +9,8 @@ import Foundation
 
 protocol PlanetaryService {
     static func getPictureOfTheDay() async throws -> DailyPicture
+    
+    static func getImage(urlString: String) async throws -> Data
 }
 
 struct PlanetaryDefaultService: PlanetaryService {
@@ -25,5 +27,12 @@ struct PlanetaryDefaultService: PlanetaryService {
         let data = try await networkCommunication.execute(request: request)
         let model = try data.decode() as DailyPicture
         return model
+    }
+    
+    static func getImage(urlString: String) async throws -> Data {
+        
+        let request = NetworkRequest(path: urlString)
+        let data = try await networkCommunication.execute(request: request)
+        return data
     }
 }

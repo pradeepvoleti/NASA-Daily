@@ -22,6 +22,9 @@
 		18FFDF9B29C724E0003663E8 /* DailyPictureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9A29C724E0003663E8 /* DailyPictureState.swift */; };
 		18FFDF9D29C72675003663E8 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9C29C72675003663E8 /* NetworkRequest.swift */; };
 		18FFDF9F29C72692003663E8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9E29C72692003663E8 /* NetworkError.swift */; };
+		18FFDFA329C72E12003663E8 /* NetworkCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDFA229C72E12003663E8 /* NetworkCheck.swift */; };
+		18FFDFA629C735F8003663E8 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDFA529C735F8003663E8 /* FileManager.swift */; };
+		18FFDFAA29C74988003663E8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDFA929C74988003663E8 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		18FFDF9C29C72675003663E8 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		18FFDF9E29C72692003663E8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		18FFDFA029C72871003663E8 /* NASA-Daily-Pics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NASA-Daily-Pics-Info.plist"; sourceTree = SOURCE_ROOT; };
+		18FFDFA229C72E12003663E8 /* NetworkCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheck.swift; sourceTree = "<group>"; };
+		18FFDFA529C735F8003663E8 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		18FFDFA929C74988003663E8 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 				18FFDF8E29C71E58003663E8 /* Models */,
 				18FFDF8729C71D71003663E8 /* Network */,
 				18FFDF9129C71ECA003663E8 /* Extensions */,
+				18FFDFA129C72DF1003663E8 /* Utility */,
 				18FFDF8B29C71E30003663E8 /* App */,
 				18FFDF6329C71981003663E8 /* Preview Content */,
 			);
@@ -154,6 +161,7 @@
 				18FFDF8829C71D7B003663E8 /* NetworkCommunication.swift */,
 				18FFDF9C29C72675003663E8 /* NetworkRequest.swift */,
 				18FFDF9E29C72692003663E8 /* NetworkError.swift */,
+				18FFDFA229C72E12003663E8 /* NetworkCheck.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				18FFDF9229C71EDF003663E8 /* DataExtensions.swift */,
+				18FFDFA929C74988003663E8 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +208,14 @@
 				18FFDF9A29C724E0003663E8 /* DailyPictureState.swift */,
 			);
 			path = "Daily Pictures";
+			sourceTree = "<group>";
+		};
+		18FFDFA129C72DF1003663E8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				18FFDFA529C735F8003663E8 /* FileManager.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,10 +351,13 @@
 				18FFDF9929C724DA003663E8 /* DailyPictureViewModel.swift in Sources */,
 				18FFDF5E29C71980003663E8 /* NASA_Daily_PicsApp.swift in Sources */,
 				18FFDF8D29C71E52003663E8 /* PlanetaryService.swift in Sources */,
+				18FFDFA629C735F8003663E8 /* FileManager.swift in Sources */,
+				18FFDFA329C72E12003663E8 /* NetworkCheck.swift in Sources */,
 				18FFDF8929C71D7B003663E8 /* NetworkCommunication.swift in Sources */,
 				18FFDF9B29C724E0003663E8 /* DailyPictureState.swift in Sources */,
 				18FFDF9029C71E68003663E8 /* PlanetaryModels.swift in Sources */,
 				18FFDF9729C724D0003663E8 /* DailyPictureScreen.swift in Sources */,
+				18FFDFAA29C74988003663E8 /* StringExtensions.swift in Sources */,
 				18FFDF9D29C72675003663E8 /* NetworkRequest.swift in Sources */,
 				18FFDF9329C71EDF003663E8 /* DataExtensions.swift in Sources */,
 				18FFDF9F29C72692003663E8 /* NetworkError.swift in Sources */,
@@ -499,6 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NASA Daily Pics/Preview Content\"";
+				DEVELOPMENT_TEAM = X3S7PZRBFR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NASA-Daily-Pics-Info.plist";
@@ -506,6 +527,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,6 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NASA Daily Pics/Preview Content\"";
+				DEVELOPMENT_TEAM = X3S7PZRBFR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NASA-Daily-Pics-Info.plist";
@@ -534,6 +557,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

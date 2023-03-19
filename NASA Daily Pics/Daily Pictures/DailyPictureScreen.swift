@@ -22,12 +22,10 @@ struct DailyPictureScreen: View {
                 
             Spacer(minLength: 20)
             
-            AsyncImage(url: viewModel.state.imageUrl) { image in
-                image
+            if let imageData = viewModel.state.imageData, let uiImage = UIImage(data: imageData) {
+                Image(uiImage: uiImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-            } placeholder: {
-                ProgressView()
             }
             
             Spacer(minLength: 20)

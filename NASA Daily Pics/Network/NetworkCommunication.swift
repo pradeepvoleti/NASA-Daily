@@ -33,8 +33,12 @@ struct NetworkCommunication: NetworkCommunicationType {
     
     private static func createRequest(request: NetworkRequest) throws -> URLRequest {
         
-        let urlString = environment + request.path
-        guard let url = URL(string: urlString) else {
+        var path = request.path
+        if !request.path.isValidURL {
+            path = environment + request.path
+        }
+        
+        guard let url = URL(string: path) else {
             throw NetworkError.invalidURL
         }
         var urlRequest = URLRequest(url: url)

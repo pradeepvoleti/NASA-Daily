@@ -7,13 +7,6 @@
 
 import Foundation
 
-enum NetworkError: Error {
-    case invalidURL
-    case invalidResponse
-    case serverError(Error)
-    case emptyData
-}
-
 protocol NetworkCommunicationType {
     
     static func execute(request: NetworkRequest) async throws -> Data
@@ -23,6 +16,7 @@ struct NetworkCommunication: NetworkCommunicationType {
     
     static let session = URLSession.shared
     static var environment: String = "https://api.nasa.gov"
+    static let apiKey = "PmJqqNXshwCC8a3A0I4fDL2wJ0EttnAHUCnQ3EQT"
     
     static func execute(request: NetworkRequest) async throws -> Data {
         
@@ -50,18 +44,6 @@ struct NetworkCommunication: NetworkCommunicationType {
     }
 }
 
-struct NetworkRequest {
-    
-    let path: String
-    var httpMethod: HTTPMethod = .get
-    var httpBody: Data? = nil
-}
-
 struct NetworkResponse {
     
-}
-
-enum HTTPMethod: String {
-    case get = "GET"
-    case post = "POST"
 }

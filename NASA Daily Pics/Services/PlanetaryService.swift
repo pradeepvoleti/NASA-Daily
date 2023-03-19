@@ -14,7 +14,7 @@ protocol PlanetaryService {
 struct PlanetaryDefaultService: PlanetaryService {
     
     enum Paths: String {
-        case apod = "/planetary/apod"
+        case apod = "/planetary/apod?api_key="
     }
     
     static var networkCommunication: NetworkCommunicationType.Type = NetworkCommunication.self

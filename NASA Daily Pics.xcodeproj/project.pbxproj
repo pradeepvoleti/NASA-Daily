@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		18FFDF5E29C71980003663E8 /* NASA_Daily_PicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF5D29C71980003663E8 /* NASA_Daily_PicsApp.swift */; };
-		18FFDF6029C71980003663E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF5F29C71980003663E8 /* ContentView.swift */; };
 		18FFDF6229C71981003663E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FFDF6129C71981003663E8 /* Assets.xcassets */; };
 		18FFDF6529C71981003663E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FFDF6429C71981003663E8 /* Preview Assets.xcassets */; };
 		18FFDF6F29C71981003663E8 /* NASA_Daily_PicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF6E29C71981003663E8 /* NASA_Daily_PicsTests.swift */; };
@@ -18,6 +17,11 @@
 		18FFDF8D29C71E52003663E8 /* PlanetaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF8C29C71E52003663E8 /* PlanetaryService.swift */; };
 		18FFDF9029C71E68003663E8 /* PlanetaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF8F29C71E68003663E8 /* PlanetaryModels.swift */; };
 		18FFDF9329C71EDF003663E8 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9229C71EDF003663E8 /* DataExtensions.swift */; };
+		18FFDF9729C724D0003663E8 /* DailyPictureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9629C724D0003663E8 /* DailyPictureScreen.swift */; };
+		18FFDF9929C724DA003663E8 /* DailyPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9829C724DA003663E8 /* DailyPictureViewModel.swift */; };
+		18FFDF9B29C724E0003663E8 /* DailyPictureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9A29C724E0003663E8 /* DailyPictureState.swift */; };
+		18FFDF9D29C72675003663E8 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9C29C72675003663E8 /* NetworkRequest.swift */; };
+		18FFDF9F29C72692003663E8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9E29C72692003663E8 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,6 @@
 /* Begin PBXFileReference section */
 		18FFDF5A29C71980003663E8 /* NASA Daily Pics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA Daily Pics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FFDF5D29C71980003663E8 /* NASA_Daily_PicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Daily_PicsApp.swift; sourceTree = "<group>"; };
-		18FFDF5F29C71980003663E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18FFDF6129C71981003663E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18FFDF6429C71981003663E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18FFDF6A29C71981003663E8 /* NASA Daily PicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA Daily PicsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +55,11 @@
 		18FFDF8C29C71E52003663E8 /* PlanetaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryService.swift; sourceTree = "<group>"; };
 		18FFDF8F29C71E68003663E8 /* PlanetaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryModels.swift; sourceTree = "<group>"; };
 		18FFDF9229C71EDF003663E8 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		18FFDF9629C724D0003663E8 /* DailyPictureScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureScreen.swift; sourceTree = "<group>"; };
+		18FFDF9829C724DA003663E8 /* DailyPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureViewModel.swift; sourceTree = "<group>"; };
+		18FFDF9A29C724E0003663E8 /* DailyPictureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureState.swift; sourceTree = "<group>"; };
+		18FFDF9C29C72675003663E8 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		18FFDF9E29C72692003663E8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +110,7 @@
 		18FFDF5C29C71980003663E8 /* NASA Daily Pics */ = {
 			isa = PBXGroup;
 			children = (
-				18FFDF5F29C71980003663E8 /* ContentView.swift */,
+				18FFDF9429C7249B003663E8 /* Daily Pictures */,
 				18FFDF8A29C71E1E003663E8 /* Services */,
 				18FFDF8E29C71E58003663E8 /* Models */,
 				18FFDF8729C71D71003663E8 /* Network */,
@@ -142,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				18FFDF8829C71D7B003663E8 /* NetworkCommunication.swift */,
+				18FFDF9C29C72675003663E8 /* NetworkRequest.swift */,
+				18FFDF9E29C72692003663E8 /* NetworkError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -177,6 +187,16 @@
 				18FFDF9229C71EDF003663E8 /* DataExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18FFDF9429C7249B003663E8 /* Daily Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				18FFDF9629C724D0003663E8 /* DailyPictureScreen.swift */,
+				18FFDF9829C724DA003663E8 /* DailyPictureViewModel.swift */,
+				18FFDF9A29C724E0003663E8 /* DailyPictureState.swift */,
+			);
+			path = "Daily Pictures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,12 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FFDF6029C71980003663E8 /* ContentView.swift in Sources */,
+				18FFDF9929C724DA003663E8 /* DailyPictureViewModel.swift in Sources */,
 				18FFDF5E29C71980003663E8 /* NASA_Daily_PicsApp.swift in Sources */,
 				18FFDF8D29C71E52003663E8 /* PlanetaryService.swift in Sources */,
 				18FFDF8929C71D7B003663E8 /* NetworkCommunication.swift in Sources */,
+				18FFDF9B29C724E0003663E8 /* DailyPictureState.swift in Sources */,
 				18FFDF9029C71E68003663E8 /* PlanetaryModels.swift in Sources */,
+				18FFDF9729C724D0003663E8 /* DailyPictureScreen.swift in Sources */,
+				18FFDF9D29C72675003663E8 /* NetworkRequest.swift in Sources */,
 				18FFDF9329C71EDF003663E8 /* DataExtensions.swift in Sources */,
+				18FFDF9F29C72692003663E8 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

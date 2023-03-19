@@ -11,7 +11,7 @@ import SwiftUI
 struct NASA_Daily_PicsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DailyPictureScreen()
         }
     }
 }

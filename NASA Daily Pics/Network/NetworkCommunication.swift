@@ -22,10 +22,11 @@ protocol NetworkCommunicationType {
 struct NetworkCommunication: NetworkCommunicationType {
     
     static let session = URLSession.shared
+    static var environment: String = "https://api.nasa.gov"
     
     static func execute(request: NetworkRequest) async throws -> Data {
         
-        var urlRequest = URLRequest(url: "")
+        let request = try createRequest(request: request)
         let (data, response) = try await session.data(for: request)
         
         guard let httpResponse = response as? HTTPURLResponse,
@@ -34,6 +35,18 @@ struct NetworkCommunication: NetworkCommunicationType {
         }
         
         return data
+    }
+    
+    private static func createRequest(request: NetworkRequest) throws -> URLRequest {
+        
+        let urlString = environment + request.path
+        guard let url = URL(string: urlString) else {
+            throw NetworkError.invalidURL
+        }
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = request.httpMethod.rawValue
+        urlRequest.httpBody = request.httpBody
+        return urlRequest
     }
 }
 

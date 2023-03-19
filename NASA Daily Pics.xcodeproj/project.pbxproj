@@ -15,6 +15,9 @@
 		18FFDF7929C71981003663E8 /* NASA_Daily_PicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF7829C71981003663E8 /* NASA_Daily_PicsUITests.swift */; };
 		18FFDF7B29C71981003663E8 /* NASA_Daily_PicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF7A29C71981003663E8 /* NASA_Daily_PicsUITestsLaunchTests.swift */; };
 		18FFDF8929C71D7B003663E8 /* NetworkCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF8829C71D7B003663E8 /* NetworkCommunication.swift */; };
+		18FFDF8D29C71E52003663E8 /* PlanetaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF8C29C71E52003663E8 /* PlanetaryService.swift */; };
+		18FFDF9029C71E68003663E8 /* PlanetaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF8F29C71E68003663E8 /* PlanetaryModels.swift */; };
+		18FFDF9329C71EDF003663E8 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF9229C71EDF003663E8 /* DataExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		18FFDF7829C71981003663E8 /* NASA_Daily_PicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Daily_PicsUITests.swift; sourceTree = "<group>"; };
 		18FFDF7A29C71981003663E8 /* NASA_Daily_PicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Daily_PicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18FFDF8829C71D7B003663E8 /* NetworkCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCommunication.swift; sourceTree = "<group>"; };
+		18FFDF8C29C71E52003663E8 /* PlanetaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryService.swift; sourceTree = "<group>"; };
+		18FFDF8F29C71E68003663E8 /* PlanetaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryModels.swift; sourceTree = "<group>"; };
+		18FFDF9229C71EDF003663E8 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +102,12 @@
 		18FFDF5C29C71980003663E8 /* NASA Daily Pics */ = {
 			isa = PBXGroup;
 			children = (
-				18FFDF8729C71D71003663E8 /* Network */,
-				18FFDF5D29C71980003663E8 /* NASA_Daily_PicsApp.swift */,
 				18FFDF5F29C71980003663E8 /* ContentView.swift */,
-				18FFDF6129C71981003663E8 /* Assets.xcassets */,
+				18FFDF8A29C71E1E003663E8 /* Services */,
+				18FFDF8E29C71E58003663E8 /* Models */,
+				18FFDF8729C71D71003663E8 /* Network */,
+				18FFDF9129C71ECA003663E8 /* Extensions */,
+				18FFDF8B29C71E30003663E8 /* App */,
 				18FFDF6329C71981003663E8 /* Preview Content */,
 			);
 			path = "NASA Daily Pics";
@@ -136,6 +144,39 @@
 				18FFDF8829C71D7B003663E8 /* NetworkCommunication.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		18FFDF8A29C71E1E003663E8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18FFDF8C29C71E52003663E8 /* PlanetaryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		18FFDF8B29C71E30003663E8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18FFDF5D29C71980003663E8 /* NASA_Daily_PicsApp.swift */,
+				18FFDF6129C71981003663E8 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		18FFDF8E29C71E58003663E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18FFDF8F29C71E68003663E8 /* PlanetaryModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18FFDF9129C71ECA003663E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18FFDF9229C71EDF003663E8 /* DataExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +311,10 @@
 			files = (
 				18FFDF6029C71980003663E8 /* ContentView.swift in Sources */,
 				18FFDF5E29C71980003663E8 /* NASA_Daily_PicsApp.swift in Sources */,
+				18FFDF8D29C71E52003663E8 /* PlanetaryService.swift in Sources */,
 				18FFDF8929C71D7B003663E8 /* NetworkCommunication.swift in Sources */,
+				18FFDF9029C71E68003663E8 /* PlanetaryModels.swift in Sources */,
+				18FFDF9329C71EDF003663E8 /* DataExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,12 @@ struct DailyPictureScreen: View {
                 
             Spacer(minLength: 20)
             
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle())
+                .scaleEffect(2)
+                .opacity(viewModel.state.hideProgress ? 0 : 1)
+                .frame(height: viewModel.state.hideProgress ? 0 : 20)
+            
             if let imageData = viewModel.state.imageData, let uiImage = UIImage(data: imageData) {
                 Image(uiImage: uiImage)
                     .resizable()

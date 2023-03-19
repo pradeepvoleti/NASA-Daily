@@ -14,4 +14,5 @@ struct DailyPictureState {
     var imageUrl: String = ""
     var imageData: Data?
     var hasNetwork: Bool = true
+    var hideProgress: Bool = false
 }

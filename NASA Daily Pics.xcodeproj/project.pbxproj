@@ -14,6 +14,7 @@
 		18FFDF6F29C71981003663E8 /* NASA_Daily_PicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF6E29C71981003663E8 /* NASA_Daily_PicsTests.swift */; };
 		18FFDF7929C71981003663E8 /* NASA_Daily_PicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF7829C71981003663E8 /* NASA_Daily_PicsUITests.swift */; };
 		18FFDF7B29C71981003663E8 /* NASA_Daily_PicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF7A29C71981003663E8 /* NASA_Daily_PicsUITestsLaunchTests.swift */; };
+		18FFDF8929C71D7B003663E8 /* NetworkCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDF8829C71D7B003663E8 /* NetworkCommunication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		18FFDF7429C71981003663E8 /* NASA Daily PicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA Daily PicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FFDF7829C71981003663E8 /* NASA_Daily_PicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Daily_PicsUITests.swift; sourceTree = "<group>"; };
 		18FFDF7A29C71981003663E8 /* NASA_Daily_PicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Daily_PicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18FFDF8829C71D7B003663E8 /* NetworkCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCommunication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		18FFDF5C29C71980003663E8 /* NASA Daily Pics */ = {
 			isa = PBXGroup;
 			children = (
+				18FFDF8729C71D71003663E8 /* Network */,
 				18FFDF5D29C71980003663E8 /* NASA_Daily_PicsApp.swift */,
 				18FFDF5F29C71980003663E8 /* ContentView.swift */,
 				18FFDF6129C71981003663E8 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				18FFDF7A29C71981003663E8 /* NASA_Daily_PicsUITestsLaunchTests.swift */,
 			);
 			path = "NASA Daily PicsUITests";
+			sourceTree = "<group>";
+		};
+		18FFDF8729C71D71003663E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				18FFDF8829C71D7B003663E8 /* NetworkCommunication.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				18FFDF6029C71980003663E8 /* ContentView.swift in Sources */,
 				18FFDF5E29C71980003663E8 /* NASA_Daily_PicsApp.swift in Sources */,
+				18FFDF8929C71D7B003663E8 /* NetworkCommunication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

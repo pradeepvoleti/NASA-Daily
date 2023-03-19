@@ -60,6 +60,7 @@
 		18FFDF9A29C724E0003663E8 /* DailyPictureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureState.swift; sourceTree = "<group>"; };
 		18FFDF9C29C72675003663E8 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		18FFDF9E29C72692003663E8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		18FFDFA029C72871003663E8 /* NASA-Daily-Pics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NASA-Daily-Pics-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 		18FFDF5C29C71980003663E8 /* NASA Daily Pics */ = {
 			isa = PBXGroup;
 			children = (
+				18FFDFA029C72871003663E8 /* NASA-Daily-Pics-Info.plist */,
 				18FFDF9429C7249B003663E8 /* Daily Pictures */,
 				18FFDF8A29C71E1E003663E8 /* Services */,
 				18FFDF8E29C71E58003663E8 /* Models */,
@@ -499,7 +501,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NASA Daily Pics/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "NASA-Daily-Pics-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -527,7 +529,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NASA Daily Pics/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "NASA-Daily-Pics-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
